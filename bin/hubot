@@ -1,0 +1,12 @@
+#!/bin/sh
+
+set -e
+
+npm install
+export PATH="node_modules/.bin:node_modules/hubot/node_modules/.bin:$PATH"
+export HUBOT_DISCORD_TOKEN="Mjc2MTIyMjM1NDQ0Mzk2MDMy.C3KmbQ.muGax8ZEI93s9yaKV15KsMI2r14"
+export HUBOT_MAX_MESSAGE_LENGTH="2000"
+export HUBOT_GOOGLE_CSE_KEY="AIzaSyApB56YOhePCual7_GcD4gr24K806THgVg"
+export HUBOT_GOOGLE_CSE_ID="015038402523856401812:covqaxa5sac"
+
+exec node_modules/.bin/hubot --name "sharky" "$@"
