@@ -16,20 +16,13 @@
 
 tcpp = require('tcp-ping')
 
-pingServer = () ->
-    server = 'samjhaig.twilightparadox.com'
-    port = 25564
-
-    tcpp.probe server, port, (err, available) ->
-        if err
-            status = err
-        else
-            if available
-                status = 'Server is online'
-            else
-                status = 'Server is offline'
+server = process.env.SERVER_ADDRESS
+port = process.env.SERVER_PORT
 
 module.exports = (robot) ->
     robot.hear /status/i, (msg) ->
-        status = pingServer()
-        msg.send status
+        tcpp.probe server, port, (err, available) ->
+            if available
+                msg.send 'Minecraft server is online at ' + server + ':' + port
+            else
+                msg.send 'Cannot reach Minecraft server at ' + server + ':' + port
