@@ -2,7 +2,7 @@
 #   Will tcp ping the minecraft server and return whether it is online or offline
 #
 # Dependencies:
-#   None
+#   tcp-ping - https://www.npmjs.com/package/tcp-ping
 #
 # Configuration:
 #   None
