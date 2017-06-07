@@ -20,7 +20,7 @@ server = process.env.SERVER_ADDRESS
 port = process.env.SERVER_PORT
 
 module.exports = (robot) ->
-    robot.hear /status/i, (msg) ->
+    robot.respond /status/i, (msg) ->
         tcpp.probe server, port, (err, available) ->
             if available
                 msg.send 'Minecraft server is online at ' + server + ':' + port
