@@ -16,13 +16,13 @@
 
 getTay = () ->
     backImg = [
-        'https://drive.google.com/open?id=0Bw0HHaXUVbdiMkpCaktLQk9aMkE',
-        'https://drive.google.com/open?id=0Bw0HHaXUVbdiQTM5XzVZb2w4X2s',
-        'https://drive.google.com/open?id=0Bw0HHaXUVbdiN3ZNV1VCbEFhMXM',
-        'https://drive.google.com/open?id=0Bw0HHaXUVbdiX1dJVzdObTd0TXM',
-        'https://drive.google.com/open?id=0Bw0HHaXUVbdiSEp0QnlsVE5lUjg',
-        'https://drive.google.com/open?id=0Bw0HHaXUVbdiN3VBR1kxMllvVGM',
-        'https://drive.google.com/open?id=0Bw0HHaXUVbdiQ2RXN29GWnI4V1k'
+        'https://drive.google.com/uc?id=0Bw0HHaXUVbdiMkpCaktLQk9aMkE', # SunTay
+        'https://drive.google.com/uc?id=0Bw0HHaXUVbdiQTM5XzVZb2w4X2s', # MonTay
+        'https://drive.google.com/uc?id=0Bw0HHaXUVbdiN3ZNV1VCbEFhMXM', # TuesTay
+        'https://drive.google.com/uc?id=0Bw0HHaXUVbdiX1dJVzdObTd0TXM', # WednesTay
+        'https://drive.google.com/uc?id=0Bw0HHaXUVbdiQ3Bxa1pjWklfZEU', # ThursTay
+        'https://drive.google.com/uc?id=0Bw0HHaXUVbdiN3VBR1kxMllvVGM', # FriTay
+        'https://drive.google.com/uc?id=0Bw0HHaXUVbdiQ2RXN29GWnI4V1k' # SaturTay
     ]
     today = new Date
     result = {
